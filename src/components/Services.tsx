@@ -7,16 +7,19 @@ const Services = () => {
     {
       title: "Anxiety & Stress Management",
       description: "Learn evidence-based techniques to manage anxiety, reduce stress, and regain control over your thoughts and emotions. Using cognitive-behavioral therapy and mindfulness approaches, we'll work together to develop coping strategies that fit your lifestyle and help you find lasting peace.",
+      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       price: "$200 / session"
     },
     {
       title: "Relationship Counseling",
       description: "Strengthen your connections and improve communication patterns in your relationships. Whether you're working through conflicts, building intimacy, or navigating major life changes together, I provide a safe space for couples to grow and heal together.",
+      image: "https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       price: "$240 / couples session"
     },
     {
       title: "Trauma Recovery",
       description: "Heal from past experiences with compassionate, trauma-informed care. Using evidence-based therapies, we'll work at your pace to process difficult experiences, develop healthy coping mechanisms, and reclaim your sense of safety and empowerment in life.",
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       price: "$200 / session"
     }
   ];
@@ -34,7 +37,16 @@ const Services = () => {
         
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-blue-600/10 group-hover:bg-blue-600/20 transition-colors duration-300"></div>
+              </div>
+              
               <CardHeader>
                 <CardTitle className="text-xl text-gray-800 group-hover:text-blue-600 transition-colors">
                   {service.title}
