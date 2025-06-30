@@ -7,19 +7,16 @@ const Services = () => {
     {
       title: "Anxiety & Stress Management",
       description: "Learn evidence-based techniques to manage anxiety, reduce stress, and regain control over your thoughts and emotions. Using cognitive-behavioral therapy and mindfulness approaches, we'll work together to develop coping strategies that fit your lifestyle and help you find lasting peace.",
-      image: "/lovable-uploads/af7d9dcc-c31c-44e0-908d-a84c9b9795f1.png",
       price: "$200 / session"
     },
     {
       title: "Relationship Counseling",
       description: "Strengthen your connections and improve communication patterns in your relationships. Whether you're working through conflicts, building intimacy, or navigating major life changes together, I provide a safe space for couples to grow and heal together.",
-      image: "/lovable-uploads/af7d9dcc-c31c-44e0-908d-a84c9b9795f1.png",
       price: "$240 / couples session"
     },
     {
       title: "Trauma Recovery",
       description: "Heal from past experiences with compassionate, trauma-informed care. Using evidence-based therapies, we'll work at your pace to process difficult experiences, develop healthy coping mechanisms, and reclaim your sense of safety and empowerment in life.",
-      image: "/lovable-uploads/af7d9dcc-c31c-44e0-908d-a84c9b9795f1.png",
       price: "$200 / session"
     }
   ];
@@ -38,15 +35,6 @@ const Services = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
-              <div className="relative overflow-hidden rounded-t-lg">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-blue-600/20 group-hover:bg-blue-600/30 transition-colors duration-300"></div>
-              </div>
-              
               <CardHeader>
                 <CardTitle className="text-xl text-gray-800 group-hover:text-blue-600 transition-colors">
                   {service.title}

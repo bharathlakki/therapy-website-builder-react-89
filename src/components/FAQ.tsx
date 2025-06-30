@@ -31,15 +31,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section 
-      className="py-20 relative"
-      style={{
-        backgroundImage: `linear-gradient(rgba(173, 216, 230, 0.1), rgba(173, 216, 230, 0.1)), url('/lovable-uploads/32c056a5-e7a8-45cb-a052-e9c95a9c96c5.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+    <section className="py-20 bg-blue-50">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-light text-gray-800 mb-6">Frequently Asked Questions</h2>
@@ -49,7 +41,7 @@ const FAQ = () => {
           </p>
         </div>
         
-        <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-8">
+        <div className="bg-white rounded-lg shadow-lg p-8">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200">
