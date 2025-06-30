@@ -14,8 +14,8 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-p6bGgzl8X5q8b8M9QQcCvkOjYhALKi.png"
-              alt="Dr. Serena Blake in her office"
+              src="/lovable-uploads/74d59159-7af8-4220-9a0f-8d156d229937.png"
+              alt="Dr. Serena Blake - About"
               className="w-full h-96 object-cover rounded-lg shadow-lg"
             />
           </div>

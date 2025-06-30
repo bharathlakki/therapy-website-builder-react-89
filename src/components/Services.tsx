@@ -7,19 +7,19 @@ const Services = () => {
     {
       title: "Anxiety & Stress Management",
       description: "Learn evidence-based techniques to manage anxiety, reduce stress, and regain control over your thoughts and emotions. Using cognitive-behavioral therapy and mindfulness approaches, we'll work together to develop coping strategies that fit your lifestyle and help you find lasting peace.",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/af7d9dcc-c31c-44e0-908d-a84c9b9795f1.png",
       price: "$200 / session"
     },
     {
       title: "Relationship Counseling",
       description: "Strengthen your connections and improve communication patterns in your relationships. Whether you're working through conflicts, building intimacy, or navigating major life changes together, I provide a safe space for couples to grow and heal together.",
-      image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/af7d9dcc-c31c-44e0-908d-a84c9b9795f1.png",
       price: "$240 / couples session"
     },
     {
       title: "Trauma Recovery",
       description: "Heal from past experiences with compassionate, trauma-informed care. Using evidence-based therapies, we'll work at your pace to process difficult experiences, develop healthy coping mechanisms, and reclaim your sense of safety and empowerment in life.",
-      image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/af7d9dcc-c31c-44e0-908d-a84c9b9795f1.png",
       price: "$200 / session"
     }
   ];
